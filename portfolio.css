@@ -246,8 +246,26 @@ h3 {
 .nav .profile .skills .gauge.nodejs:before {
     background-color: #4CAF50;
     width: 0%;
-    -webkit-animation: loadProgress60 1s forwards .5s;
-    animation: loadProgress60 1s forwards .5s;
+    -webkit-animation: loadProgress50 1s forwards .5s;
+    animation: loadProgress50 1s forwards .5s;
+}
+
+@keyframes loadProgress50 {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 50%
+    }
+}
+
+@-webkit-keyframes loadProgress50 {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 50%
+    }
 }
 
 @-webkit-keyframes loadProgress60 {
